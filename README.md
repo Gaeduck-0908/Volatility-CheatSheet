@@ -3,19 +3,19 @@
 [Volatility](https://github.com/volatilityfoundation/volatility)
 [Volatility3](https://github.com/volatilityfoundation/volatility3)
 
-# **Contribute**
+## **Contribute**
 
 Pull Request is always welcome.
 
-# Info
+## Info
 
 It would be good to note that the platform that goes into the plugin option can be changed.
 
 - ex. windows.info → linux.info
 
-# **OS INFORMATION**
+## **OS INFORMATION**
 
-## **IMAGEINFO**
+### **IMAGEINFO**
 
 | Volatility 2 | Volatility 3 |
 | --- | --- |
@@ -24,9 +24,9 @@ It would be good to note that the platform that goes into the plugin option can 
 
 ---
 
-# **PROCESS INFORMATION**
+## **PROCESS INFORMATION**
 
-## **PSLIST**
+### **PSLIST**
 
 | Volatility 2 | Volatility 3 |
 | --- | --- |
@@ -35,31 +35,31 @@ It would be good to note that the platform that goes into the plugin option can 
 | vol.py -f “/path/to/file” ‑‑profile <profile> pstree | vol.py -f “/path/to/file” windows.pstree |
 | vol.py -f “/path/to/file” ‑‑profile <profile> psxview |  |
 
-## **PROCDUMP**
+### **PROCDUMP**
 
 | Volatility 2 | Volatility 3 |
 | --- | --- |
 | vol.py -f “/path/to/file” ‑‑profile <profile> procdump -p <PID> ‑‑dump-dir=“/path/to/dir” | vol.py -f “/path/to/file” -o “/path/to/dir” windows.dumpfiles ‑‑pid <PID> |
 
-## **MEMDUMP**
+### **MEMDUMP**
 
 | Volatility 2 | Volatility 3 |
 | --- | --- |
 | vol.py -f “/path/to/file” ‑‑profile <profile> memdump -p <PID> ‑‑dump-dir=“/path/to/dir” | vol.py -f “/path/to/file” -o “/path/to/dir” windows.memmap ‑‑dump ‑‑pid <PID> |
 
-## **HANDLES**
+### **HANDLES**
 
 | Volatility 2 | Volatility 3 |
 | --- | --- |
 | vol.py -f “/path/to/file” ‑‑profile <profile> handles -p <PID> | vol.py -f “/path/to/file” windows.handles ‑‑pid <PID> |
 
-## **DLLS**
+### **DLLS**
 
 | Volatility 2 | Volatility 3 |
 | --- | --- |
 | vol.py -f “/path/to/file” ‑‑profile <profile> dlllist -p <PID> | vol.py -f “/path/to/file” windows.dlllist ‑‑pid <PID> |
 
-## **CMDLINE**
+### **CMDLINE**
 
 | Volatility 2 | Volatility 3 |
 | --- | --- |
@@ -69,18 +69,18 @@ It would be good to note that the platform that goes into the plugin option can 
 
 ---
 
-# **NETWORK INFORMATION**
+## **NETWORK INFORMATION**
 
-## **NETSCAN**
+### **NETSCAN**
 
 | Volatility 2 | Volatility 3 |
 | --- | --- |
 | vol.py -f “/path/to/file” ‑‑profile <profile> netscan | vol.py -f “/path/to/file” windows.netscan |
 | vol.py -f “/path/to/file” ‑‑profile <profile> netstat | vol.py -f “/path/to/file” windows.netstat |
 
-# **REGISTRY**
+## **REGISTRY**
 
-## **HIVELIST**
+### **HIVELIST**
 
 | Volatility 2 | Volatility 3 |
 | --- | --- |
@@ -89,14 +89,14 @@ It would be good to note that the platform that goes into the plugin option can 
  |
 | vol.py -f “/path/to/file” ‑‑profile <profile> hivelist | vol.py -f “/path/to/file” windows.registry.hivelist |
 
-## **PRINTKEY**
+### **PRINTKEY**
 
 | Volatility 2 | Volatility 3 |
 | --- | --- |
 | vol.py -f “/path/to/file” ‑‑profile <profile> printkey | vol.py -f “/path/to/file” windows.registry.printkey |
 | vol.py -f “/path/to/file” ‑‑profile <profile> printkey -K “Software\Microsoft\Windows\CurrentVersion” | vol.py -f “/path/to/file” windows.registry.printkey ‑‑key “Software\Microsoft\Windows\CurrentVersion” |
 
-## **HIVEDUMP**
+### **HIVEDUMP**
 
 | Volatility 2 | Volatility 3 |
 | --- | --- |
@@ -104,15 +104,15 @@ It would be good to note that the platform that goes into the plugin option can 
 
 ---
 
-# **FILES**
+## **FILES**
 
-## **FILESCAN**
+### **FILESCAN**
 
 | Volatility 2 | Volatility 3 |
 | --- | --- |
 | vol.py -f “/path/to/file” ‑‑profile <profile> filescan | vol.py -f “/path/to/file” windows.filescan |
 
-## **FILEDUMP**
+### **FILEDUMP**
 
 | Volatility 2 | Volatility 3 |
 | --- | --- |
@@ -122,15 +122,15 @@ It would be good to note that the platform that goes into the plugin option can 
 
 ---
 
-# **MISCELLANEOUS**
+## **MISCELLANEOUS**
 
-## **MALFIND**
+### **MALFIND**
 
 | Volatility 2 | Volatility 3 |
 | --- | --- |
 | vol.py -f “/path/to/file” ‑‑profile <profile> malfind | vol.py -f “/path/to/file” windows.malfind |
 
-## **YARASCAN**
+### **YARASCAN**
 
 | Volatility 2 | Volatility 3 |
 | --- | --- |
